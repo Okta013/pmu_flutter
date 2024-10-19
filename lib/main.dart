@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/view/home_page/home_page.dart';
+import 'package:test_app/view/navigation/main_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Аникеева А.А. ЦПИбву-41'),
+      home: const  MainNavigation(),
     );
   }
 }
