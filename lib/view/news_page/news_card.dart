@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../domain/news_data.dart';
 import '../details_page/detail_news_page.dart';
@@ -17,7 +16,6 @@ class NewsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Переход на страницу деталей
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => DetailsNewsPage(article)),
