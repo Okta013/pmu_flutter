@@ -35,76 +35,76 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     final data = [
       CardData(
-        'Великолепный кот',
-        description: 'Описание карточки с великолепным котом',
+        'Мейн-кун',
+        description: 'Ласковый гигант с серьезным взглядом',
         imageUrl:
-        'https://i.pinimg.com/originals/e7/17/fd/e717fda07a2e5a8fecaa22dc41db19a5.jpg',
+        'https://zooqi.by/social/cache/image_attachment_gallery/attachment-image/375/3884_15453859757787.jpg?1644402262',
       ),
       CardData(
-       'Великолепный кот 2',
-        description: 'Описание карточки с великолепным котом 2',
+       'Сиамская кошка',
+        description: 'Грациозные восточные красавцы и красавицы выделяются особым изяществом и темпераментным характером.',
         imageUrl:
-        'https://i.pinimg.com/originals/09/4e/e0/094ee0d312d6fb870f22e4e57a69bdd7.jpg',
+        'https://siameseofday.com/wp-content/uploads/2019/08/resting-siamese-cat.jpg',
       ),
       CardData(
-        'Великолепный кот 3',
-        description: 'Описание карточки с великолепным котом 3',
+        'Русская голубая',
+        description: 'Порода выделяется серебристо-голубым окрасом и пронзительными зелеными глазами.',
         imageUrl:
-        'https://i.pinimg.com/736x/4a/ad/a7/4aada7610c2007931039b3c6a26e63fd.jpg',
+        'https://i.pinimg.com/originals/a4/5d/25/a45d254035b639b1b84df109ef7c5230.jpg',
       ),
       CardData(
-        'Великолепный кот 4',
-        description: 'Описание карточки с великолепным котом 4',
+        'Невская маскарадная',
+        description: 'Обаятельные «сибиряки» с «сиамским» окрасом, шикарной гипоаллергенной «шубкой» и покладистым нравом.',
         imageUrl:
-        'https://i.pinimg.com/originals/fb/68/bf/fb68bfaffe1cf626aaf27917b6671523.jpg',
+        'https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_651fcc86eda1866457e456ca_651fe3dcba0cd677bb1d776c/scale_1200',
       ),
       CardData(
-        'Великолепный кот 5',
-        description: 'Описание карточки с великолепным котом 5',
+        'Канадский сфинкс',
+        description: '«Чудо природы»: в них действительно есть что-то загадочное и завораживающее.',
         imageUrl:
-        'https://a.d-cd.net/5720dees-1920.jpg',
+        'https://i.pinimg.com/originals/12/84/07/1284076693de06bd79d61f69377d25d7.jpg',
       ),
       CardData(
-        'Великолепный кот 6',
-        description: 'Описание карточки с великолепным котом 6',
+        'Норвежская лесная кошка',
+        description: 'Порода похожа на «маленьких рысей», что неудивительно – ведь «норвежки» произошли от диких котов.',
         imageUrl:
-        'https://cdnn1.img.crimea.ria.ru/img/111859/14/1118591434_0:0:1920:1280_1920x0_80_0_0_a36cf4c810dabd762997ac2a5284e8b6.jpg',
+        'https://avatars.mds.yandex.net/i?id=dfac79e94af8a46c3271512e983231d1_l-12450907-images-thumbs&n=13',
       ),
       CardData(
-        'Великолепный кот 7',
-        description: 'Описание карточки с великолепным котом 7',
+        'Нибелунг',
+        description: 'Редкая и красивая порода длинношерстных кошек, «шубка» которых имеет голубой цвет.',
         imageUrl:
         'https://news.itmo.ru/images/news/big/868004.jpg',
       ),
       CardData(
-        'Великолепный кот 8',
-        description: 'Описание карточки с великолепным котом 8',
+        'Бенгальская кошка',
+        description: 'Это активные, игривые и общительные питомцы.',
         imageUrl:
-        'https://thepics.top/images/9320.jpg',
+        'https://avatars.dzeninfra.ru/get-zen_doc/9723921/pub_645cf4f796ec39533e304be6_645cfa90a62c3f2abc449a5a/scale_1200',
       ),
       CardData(
-        'Великолепный кот 9',
-        description: 'Описание карточки с великолепным котом 9',
+        'Бурмилла',
+        description: 'Сравнительно молодая порода кошек, выведенная в Великобритании.',
         imageUrl:
-        'https://i.pinimg.com/originals/b2/83/55/b2835533ca3ac6eb4beb4bdd2e5a364c.jpg',
+        'https://avatars.mds.yandex.net/i?id=adcb7d8dbc7eaef639d5d713d8a952d4_l-3573407-images-thumbs&n=13',
       ),
       CardData(
-        'Великолепный кот 10',
-        description: 'Описание карточки с великолепным котом 10',
+        'Корниш-рекс',
+        description: 'Изысканная порода кошек с очень мягкой и кучерявой шерстью.',
         imageUrl:
-        'https://avatars.mds.yandex.net/i?id=bcbfc7ffe1d4323f092954c149b13f1a_l-12752555-images-thumbs&n=13',
+        'https://koshka.top/uploads/posts/2021-12/1639051398_66-koshka-top-p-kornish-reks-belaya-81.jpg',
       ),
       CardData(
-        'Великолепный кот 11',
-        description: 'Описание карточки с великолепным котом 11',
+        'Рагамаффин',
+        description: 'Ближайший родственник рэгдолла, удачно объединивший в себе гены беспородных кошек и персов.',
         imageUrl:
-        'https://pazlyigra.ru/uploads/posts/2022-04/kot-kotia-pushistyi-zelenye-glaza-krupnyi-plan-morda-portret.jpg',
+        'https://i.pinimg.com/originals/ee/41/8b/ee418b026f6bf9bbe20bef07ccbd01e2.jpg',
       ),
       CardData(
-        'Великолепный кот 12',
-        description: 'Описание карточки с великолепным котом 12',
+        'Шотландская вислоухая кошка',
+        description: 'Одна из самых молодых пород. Ее отличают неповторимый внешний вид, грациозность и высокий уровень интеллекта.',
         imageUrl:
-        'https://avatars.mds.yandex.net/i?id=258ff88bde22b0eb75c6a4b65a745c20_l-5347526-images-thumbs&n=13',
+        'https://i.pinimg.com/originals/30/ae/63/30ae63e36eeb2ad2608ede1e16ab5e7f.jpg',
       ),
     ];
 
