@@ -10,7 +10,14 @@ class NewsRepository {
   final Dio _dio = Dio();
 
   Future<List<NewsData>> fetchCatNews() async {
-    final response = await _dio.get('$_baseUrl/everything?q=cats&apiKey=$_apiKey');
+    final response = await _dio.get(
+      '$_baseUrl/everything',
+      queryParameters: {
+        'q': 'кот OR кошка',
+        'language': 'ru',
+        'apiKey': _apiKey,
+      },
+    );
 
     if (response.statusCode == 200) {
       final List<NewsDTO> articles = (response.data['articles'] as List)

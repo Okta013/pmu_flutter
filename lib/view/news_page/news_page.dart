@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../data/repository/news_repository.dart';
 import '../../domain/news_data.dart';
+import '../details_page/detail_news_page.dart';
 import 'news_card.dart';
 
 class NewsPage extends StatelessWidget {
@@ -37,6 +38,12 @@ class NewsPage extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+  void _navigateToDetails(BuildContext context, NewsData data) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => DetailsNewsPage(data)),
     );
   }
 }

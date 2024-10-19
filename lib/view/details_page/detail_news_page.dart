@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/card_data.dart';
+import '../../domain/news_data.dart';
 
-class DetailsPage extends StatelessWidget {
-  final CardData data;
+
+
+class DetailsNewsPage extends StatelessWidget {
+  final NewsData data;
 
   final Color _color = Colors.orangeAccent;
 
-  const DetailsPage(this.data, {super.key});
+  const DetailsNewsPage(this.data, {super.key});
 
   @override
   Widget build(BuildContext context) {

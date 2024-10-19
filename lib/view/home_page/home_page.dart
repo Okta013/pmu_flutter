@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../domain/card_data.dart';
-import '../details_page/details_page.dart';
+import '../details_page/details_card_page.dart';
 import 'card.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -142,7 +142,7 @@ class Body extends StatelessWidget {
   void _navigateToDetails(BuildContext context, CardData data) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => DetailsPage(data)),
+      MaterialPageRoute(builder: (context) => DetailsCardPage(data)),
     );
   }
 }
