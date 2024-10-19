@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../data/repository/news_repository.dart';
+import '../../domain/news_data.dart';
+import 'news_card.dart';
+
 class NewsPage extends StatelessWidget {
-  const NewsPage({super.key}); // Создаем пустой класс
+  final NewsRepository newsRepository = NewsRepository();
+
+  NewsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,8 +15,27 @@ class NewsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Новости'),
       ),
-      body: const Center(
-        child: Text('Здесь будут новости!'),
+      body: FutureBuilder<List<NewsData>>(
+        future: newsRepository.fetchCatNews(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Ошибка: ${snapshot.error}'));
+          } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+            return const Center(child: Text('Нет новостей.'));
+          }
+
+          List<NewsData> articles = snapshot.data!;
+
+          return ListView.builder(
+            itemCount: articles.length,
+            itemBuilder: (context, index) {
+              final article = articles[index];
+              return NewsCard(article: article);
+            },
+          );
+        },
       ),
     );
   }

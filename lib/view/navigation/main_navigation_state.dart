@@ -9,7 +9,7 @@ class MainNavigationState extends State<MainNavigation> {
 
   final List<Widget> _pages = [
     const MyHomePage(title: 'Аникеева А.А. ЦПИбву-41'),
-    const NewsPage(),  // Страница новостей
+    NewsPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -21,7 +21,7 @@ class MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex], // Выбираем отображаемую страницу
+      body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
